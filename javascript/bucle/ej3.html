@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            var suma = 0;
+            var cant = 0;
+            while (1 < 2) {
+                var entrada = parseInt(prompt("Introduce numero (0para salir)"));
+                if (entrada == 0) {
+                    break;
+                };
+                suma = suma + entrada;
+                cant++;
+            };
+            $("div").prepend("media: " + Math.round(suma / cant));
+            $("p").prepend("Suma: " + suma);
+
+        });
+    </script>
+</head>
+
+<body>
+    <p></p>
+    <div></div>
+</body>
+
+</html>

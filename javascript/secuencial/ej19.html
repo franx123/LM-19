@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            var correctas=prompt("Introduce el numero de respuestas correctas");
+            var blanco=prompt("Introduce el numero de respuestas en blanco");
+            var incorecta=prompt("Introduce el numero de respuestas incorrectas");
+            var total=(5*correctas)-(1*incorecta);
+            alert("Nota total: "+total);
+        });
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

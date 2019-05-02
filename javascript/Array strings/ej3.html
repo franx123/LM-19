@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            var caracter=["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","z"];
+            var cadena=prompt("Introduce:");
+            var letra=prompt("Caracter a contar:");
+            letra=letra.toLocaleLowerCase();
+            var bool=false;
+            var cont=0;
+            for (let i = 0; i < caracter.length; i++) {
+               if (caracter[i]==letra && caracter[i]==letra) {
+                   bool=true;
+               };
+            };
+            if (bool==true) {
+                for (let x = 0; x < cadena.length; x++) {
+                    if (letra==cadena[x]) {
+                        cont++;
+                    };
+                };
+                alert("Coincidecias: " + cont);
+            }else{
+                alert("El caracter introducido no es valido");
+            };
+        });
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

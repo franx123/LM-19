@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            var a = 0;
+            var b = prompt("Introduce una cadena");
+            var c = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+            for (var i = 0; i < c.length; i++) {
+                for (var x = 0; x < b.length; x++) {
+                    if (b[x] == c[i]) {
+                        a += 1;
+                    }
+                }
+            }
+            alert("Cantidad de mayusculas:"+a)
+        });
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

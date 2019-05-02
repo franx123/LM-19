@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            var a =$("#2").val();
+            var b =$("#1").val();
+            var c =$("#5").val();
+            var d =$("#20").val();
+            var e =$("#10").val();
+            var total=(2*a)+(1*b)+(0.5*c)+(0.2*d)+(0.1*e);
+            $("button").click(function(){
+                $("#out").html("Total: "+total+"€");
+            });
+        });
+    </script>
+</head>
+<body>
+    <h2>Dime cuantas monedas de cada tipo tienes.</h2>
+    <span><strong>2€</strong></span> <input type="number" name="" id="2"><br>
+    <span><strong>1€</strong></span> <input type="number" name="" id="1"><br>
+    <span><strong>.50€</strong></span> <input type="number" name="" id="5"><br>
+    <span><strong>.20€</strong></span> <input type="number" name="" id="20"><br>
+    <span><strong>.10€</strong></span> <input type="number" name="" id="10"><br>
+    <button>Calcular</button>
+    <h3 id="out"></h3>
+</body>
+</html>

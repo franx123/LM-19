@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            var caracter=["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","z"];
+            var cadena=prompt("Introduce cadena");
+            var cadena2="";
+            var letra1=prompt("Introduce caracte a cambiar");
+            var letra2=prompt("Introduce el sustituto")
+            var bool=false;
+            var bool2=false;
+            for (let i = 0; i < caracter.length; i++) {
+               if (caracter[i]==letra1) {
+                   bool=true;
+               };
+               if (caracter[i]==letra2) {
+                   bool2=true;
+               }
+            };
+            if (bool==true && bool2==true) {
+                for (let i = 0; i < cadena.length; i++) {
+                    if (cadena[i]==letra1) {
+                        cadena2=cadena2+letra2;
+                    }else{
+                        cadena2=cadena2+cadena[i];
+                    };
+                };
+            };
+            alert(cadena2);
+        });
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

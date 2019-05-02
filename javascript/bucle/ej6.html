@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            var num1=parseInt(prompt("Introduce primer numero"));
+            var num2=parseInt(prompt("Introduce segundo numero"));
+            $("p").append(num1);
+            $("p").append("  ");
+            $("p").append(num2);
+            $("p").append("</br>");
+            for (let i = num1; i <= num2; i++) {
+                if (i%2==0) {
+                    $("p").append(i+"  Es par")
+                    $("p").append("</br>");
+                };
+            };
+        });
+    </script>
+</head>
+
+<body>
+    <p>Estos son los numeros pares entre:</p>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            var frase=prompt("Introduce una frase");
+            var espacio=" ";
+            var cont=0;
+            for (let i = 0; i < frase.length; i++) {
+                if (frase[i]==espacio) {
+                    cont++;
+                };                
+            };
+            alert("Palabras: " + (cont+1));
+        });
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

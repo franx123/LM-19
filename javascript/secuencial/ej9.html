@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        var carro=prompt("Precio del carrito:");
+        var des=carro*0.15;
+        var total=carro-des;
+        $("#out").html("El valor de carro con descuento es:"+total);
+        $("#out2").html("La rebaja es de: "+des);
+    });
+    </script>
+</head>
+<body>
+    <h2 id="out"></h2>
+    <p id="out2"></p>
+</body>
+</html>
